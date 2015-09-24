@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>index page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+	<button>click</button>
+	<div id = "results">
+		
+
+	</div>
+	<script type="text/javascript">
+			$('button').on('click', function () {
+				$.ajax({
+					dataType: 'json',
+					url: 'http://cutty7sark.github.io/test/home.html',
+					success: function(data, second) {
+						console.log(data);
+						console.log(second);
+						$('#results').load('pagetwo.html');
+						// ИЛИ  $('.main-content').append(data);
+					}
+				});
+			});
+	</script>
+
+		
+
+
+</body>
+</html>
