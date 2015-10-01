@@ -1,4 +1,4 @@
-var headUr1 = '/ajax';
+var headUr1 = '/ajax_practice';
 var htmlList = ['index1.html', 'pageone.html', 'pagetwo.html'];
 
 $.ajax({
