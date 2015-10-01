@@ -1,5 +1,5 @@
 var headUrl = 'http://cutty7sark.github.io/ajax_practice/';
-var htmlList = ['index1.html', 'pageone.html', 'pagetwo.html'];
+var htmlList = ['index1.html', 'pagetwo.html', 'pagethree.html'];
 
 $.ajax({
 	url: headUrl + htmlList[1],
