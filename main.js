@@ -1,5 +1,5 @@
 var headUr1 = '/ajax';
-var htmlList = ['index.html', 'pageone.html', 'pagetwo.html'];
+var htmlList = ['index1.html', 'pageone.html', 'pagetwo.html'];
 
 $.ajax({
 	url: headUr1 = 'pageone.html',
