@@ -6,25 +6,14 @@
 </head>
 <body>
 	<button>click</button>
-	<div id = "results">
-		
+	<div id = "results_one">
+
+	</div>
+	<div id = "results_two">
 
 	</div>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
-	<script type="text/javascript">
-			$('button').on('click', function () {
-				$.ajax({
-					dataType: 'json',
-					url: 'http://cutty7sark.github.io/ajax_practice/index1.html',
-					success: function(data, second) {
-						console.log(data);
-						console.log(second);
-						$('#results').load('pagetwo.html');
-						// ИЛИ  $('.main-content').append(data);
-					}
-				});
-			});
-	</script>
+	<script type="text/javascript" src="main.js"></script>
 
 		
 
