@@ -4,8 +4,7 @@ var htmlList = ['index1.html', 'pageone.html', 'pagetwo.html'];
 $.ajax({
 	url: headUrl + htmlList[1],
 	success: function(data) {
-		$('#results_one').load('pageone.html');
-		//document.body.appendChildren(data);
+		$('#results_one').append(data);
 	},
 	error: function(data) {
 	  console.error(data);
