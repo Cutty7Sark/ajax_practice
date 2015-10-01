@@ -27,7 +27,7 @@ $.ajax({
 function animateDiv() {
 	ajaxResult++;
 	if (ajaxResult === 2) {
-		$results_one.animate({left: 0}, 1500);
-		$results_two.animate({right: 0}, 1500);
+		$('#results_one').animate({left: 0}, 1500);
+		$('#results_two').animate({right: 0}, 1500);
 	};
 }
