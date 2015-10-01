@@ -14,8 +14,7 @@ $.ajax({
 $.ajax({
 	url: headUrl + htmlList[2],
 	success: function(data) {
-		$('#results_two').load('pagetwo.html');
-		//document.body.appendChildren(data);
+		$('#results_two').append(data);
 	},
 	error: function(data) {
 	  console.error(data);
