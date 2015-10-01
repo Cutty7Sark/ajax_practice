@@ -1,5 +1,6 @@
 var headUrl = 'http://cutty7sark.github.io/ajax_practice/';
 var htmlList = ['index1.html', 'pagetwo.html', 'pagethree.html'];
+var ajaxResult = 0;
 
 $.ajax({
 	url: headUrl + htmlList[1],
@@ -16,7 +17,7 @@ $.ajax({
 	url: headUrl + htmlList[2],
 	success: function(data) {
 		$('#results_two').append(data);
-		animateDivs();
+		animateDiv();
 	},
 	error: function(data) {
 	  console.error(data);
@@ -26,7 +27,7 @@ $.ajax({
 function animateDiv() {
 	ajaxResult++;
 	if (ajaxResult === 2) {
-		$divLeft.animate({left: 0}, 1500);
-		$divRight.animate({right: 0}, 1500);
+		$results_one.animate({left: 0}, 1500);
+		$results_two.animate({right: 0}, 1500);
 	};
 }
